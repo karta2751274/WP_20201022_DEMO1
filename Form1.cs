@@ -16,5 +16,23 @@ namespace WP_20201022_DEMO1
         {
             InitializeComponent();
         }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            Poker p = new Poker();
+            List<int> poker =p.GetPoker(52);
+
+            string msg = "";
+            for (int i = 0; i < poker.Count; i++)
+            {
+                msg += $"{poker[i]} ,";
+            }
+
+            rtbMsg.Text = msg + "\n";
+        }
+
+        
+
     }
+
 }

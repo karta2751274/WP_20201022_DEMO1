@@ -41,12 +41,13 @@
             this.btnGo.TabIndex = 0;
             this.btnGo.Text = "GO";
             this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // rtbMsg
             // 
             this.rtbMsg.Location = new System.Drawing.Point(129, 169);
             this.rtbMsg.Name = "rtbMsg";
-            this.rtbMsg.Size = new System.Drawing.Size(100, 96);
+            this.rtbMsg.Size = new System.Drawing.Size(389, 269);
             this.rtbMsg.TabIndex = 2;
             this.rtbMsg.Text = "";
             // 
